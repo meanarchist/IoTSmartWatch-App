@@ -1,17 +1,14 @@
 # IoTSmartWatch-App
+<img src="project_image.png" width="100">
+
 A comprehensive iOS app for controlling a smartwatch, featuring real-time weather updates, voice control, and more
-
 # SmartWatch IoT Control System
-
-![Project Image](project_image.jpg)
 
 The SmartWatch IoT Control System is a complete solution that combines an iOS app and an ESP8266-based smartwatch, offering advanced features such as voice control, real-time weather updates, automatic brightness control, and more.
 
 ## Table of Contents
 
 - [Features](#features)
-- [Components](#components)
-- [Getting Started](#getting-started)
 - [iOS App](#ios-app)
 - [Microcontroller](#microcontroller)
 - [Server Communication](#server-communication)
@@ -20,6 +17,7 @@ The SmartWatch IoT Control System is a complete solution that combines an iOS ap
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 - [Project Status](#project-status)
+- [Credits](#credits)
 
 
 ## Features
@@ -77,4 +75,7 @@ If you have questions, suggestions, or would like to collaborate, please don't h
 ## Project Status
 
 This project is actively developed and maintained.
+
+# Credits
+This app was developed by Tharun Kumar Jayaprakash.
 
