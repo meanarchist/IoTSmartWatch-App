@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IoTLab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u3-FJ-ttO">
+                                <rect key="frame" x="161" y="409" width="72" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Speak"/>
+                                <connections>
+                                    <action selector="startVoiceRecognition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqy-sR-I6D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-vr-bE4">
+                                <rect key="frame" x="48" y="153" width="298" height="245"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2u3-FJ-ttO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="8Te-Vz-k8t"/>
+                            <constraint firstItem="2u3-FJ-ttO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EVa-6r-yYF"/>
+                            <constraint firstItem="Sug-vr-bE4" firstAttribute="centerX" secondItem="2u3-FJ-ttO" secondAttribute="centerX" id="FOp-RI-s3c"/>
+                            <constraint firstItem="2u3-FJ-ttO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hhc-6M-IjS"/>
+                            <constraint firstItem="2u3-FJ-ttO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="QkZ-tu-xkF"/>
+                            <constraint firstItem="Sug-vr-bE4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="b85-gU-BFj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2u3-FJ-ttO" secondAttribute="trailing" constant="160" id="qRB-As-itc"/>
+                            <constraint firstItem="2u3-FJ-ttO" firstAttribute="top" secondItem="Sug-vr-bE4" secondAttribute="bottom" constant="11" id="ub0-TU-K4c"/>
+                            <constraint firstItem="Sug-vr-bE4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="yce-nY-xBZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="microphoneButton" destination="2u3-FJ-ttO" id="6gi-nz-6GY"/>
+                        <outlet property="recognitionLabel" destination="Sug-vr-bE4" id="ApH-z2-Zgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
