@@ -32,7 +32,9 @@ The SmartWatch IoT Control System is a complete solution that combines an iOS ap
 
 ### iOS App
 
-The iOS app, developed in Swift, serves as the central control hub for the smartwatch. It includes voice recognition, user interface, and communication features.
+The iOS app, developed in Swift, serves as the central control hub for the smartwatch. It takes in the user voice input and stores it as text data which is sent to the microcontroller in the form of a HTTP POST.
+
+<img src="appscreen.png" width="250">
 
 ### Microcontroller
 
